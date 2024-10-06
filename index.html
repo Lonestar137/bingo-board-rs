@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bingo Board</title>
+    <link data-trunk rel="rust" />
+    <style>
+      .bingo-board {
+        text-align: center;
+      }
+      .board {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5px;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      .cell {
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f0f0f0;
+        cursor: pointer;
+      }
+      .cell.selected {
+        background-color: #ffd700;
+      }
+    </style>
+  </head>
+  <body>
+      <div id="app"></div>
+  </body>
+</html>
+
+
